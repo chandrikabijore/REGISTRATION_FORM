@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Registration Form</h1>
+        </div>
+        <div class="main-section">
+            <form class="form" id="form" onsubmit="return validate()">
+                <div>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" placeholder="Enter your full name" required autocomplete="off">
+                    <div class="errorClass" id="error-name"></div>
+                </div>
+                <div>
+                    <label for="email">Email Address:</label><br>
+                    <input type="text" id="email" placeholder="Enter email address" required autocomplete="off">
+                    <div class="errorClass" id="error-email"></div>
+                </div>
+
+                <div>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                    <div class="errorClass" id="error-pass"></div>
+                </div>
+                <div>
+                    <label for="password">Confirm Password:</label><br>
+                    <input type="password" id="c-password" placeholder="Enter password again" required>
+                    <div class="errorClass" id="error-cpass"></div>
+                </div>
+
+                <div class="column">
+                    <div class="input-box"> <br>
+                        <label> Phone Number </label>
+                        <input type="number" placeholder="Enter phone number" required />
+                    </div>
+    
+                    <div class="input-box"> <br>
+                        <label>Birth Date </label><br>
+                        <input type="date" placeholder="Enter your birth date" required />
+                    </div>
+                </div>
+                <input type="submit" id="button" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</script>
+</body>
+</html>
+
